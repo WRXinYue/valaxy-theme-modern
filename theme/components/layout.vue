@@ -2,7 +2,7 @@
   <div class="antialiased">
     <ModernNav />
 
-    <main class="mx-auto ml-56px">
+    <main class="main-content mx-auto ml-56px">
       <slot>
         <RouterView v-slot="{ Component }">
           <component :is="Component">
@@ -44,3 +44,16 @@
     </ModernFooter>
   </div>
 </template>
+
+<style lang="scss" scoped>
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+    padding-top: 3.5rem;
+  }
+
+  .ml-16 {
+    margin-left: 0;
+  }
+}
+</style>

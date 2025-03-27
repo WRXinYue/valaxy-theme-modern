@@ -38,7 +38,6 @@ const relativeTime = computed(() => {
 <template>
   <article mt="14vh">
     <header class="pt-6 space-y-1 xl:pb-10">
-      <StarterDate :date="fm.date" />
       <h1
         class="st-text text-3xl font-extrabold leading-9 tracking-tight md:text-5xl sm:text-4xl md:leading-14 sm:leading-10"
       >
