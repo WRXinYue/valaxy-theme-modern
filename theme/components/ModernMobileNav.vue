@@ -61,7 +61,7 @@ const route = useRoute()
   transition: background-color 0.2s ease;
   font-size: 1rem;
 
-  .dark & {
+  @at-root html.dark & {
     color: #eee;
   }
 
@@ -69,7 +69,7 @@ const route = useRoute()
   &.router-link-active {
     background-color: rgba(0, 0, 0, 0.05);
 
-    .dark & {
+    @at-root html.dark & {
       background-color: rgba(255, 255, 255, 0.05);
     }
   }

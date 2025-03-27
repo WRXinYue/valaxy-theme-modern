@@ -124,11 +124,7 @@ onMounted(() => nextTick(updateMarker))
 .modern-nav-item {
   color: #000;
 
-  @media (prefers-color-scheme: dark) {
-    color: #fff;
-  }
-
-  .dark & {
+  @at-root html.dark & {
     color: #fff;
   }
 }
@@ -138,7 +134,7 @@ onMounted(() => nextTick(updateMarker))
   border-right: 2px solid #000;
   pointer-events: none;
 
-  .dark & {
+  @at-root html.dark & {
     border-right-color: #fff;
   }
 }

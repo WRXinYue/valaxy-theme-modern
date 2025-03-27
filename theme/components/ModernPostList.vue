@@ -40,28 +40,28 @@ function shouldShowDate(index: number) {
 <template>
   <div w="19.37vw" max-h-100vh overflow-y-auto>
     <div class="modern-post-list">
-      <div w="15.5vw" ml-auto>
-        <template v-for="(post, index) in posts" :key="post.path">
-          <div v-if="shouldShowDate(index)" h="63px" w="full" top="0" left="0" class="modern-post-list-header" relative sticky>
+      <template v-for="(post, index) in posts" :key="post.path">
+        <div v-if="shouldShowDate(index)" top="0" left="0" class="modern-post-list-header" sticky>
+          <div relative h="63px" w="15.5vw" ml-auto>
             <div absolute bottom="0" left="0">
               <div flex items-center text-xl font-bold class="modern-post-list-title">
                 {{ formatDate(post.date) }}
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="modern-post-item" mb="47px" :mt="shouldShowDate(index) ? '63px' : '0'">
-            <RouterLink :to="post.path || ''">
-              <h2 class="modern-post-title">
-                {{ post.title }}
-              </h2>
-              <div class="modern-post-series" font-size-sm>
-                <div v-if="post.excerpt" class="modern-post-excerpt" v-html="post.excerpt" />
-              </div>
-            </RouterLink>
-          </div>
-        </template>
-      </div>
+        <div w="15.5vw" ml-auto class="modern-post-item" mb="47px" :mt="shouldShowDate(index) ? '63px' : '0'">
+          <RouterLink :to="post.path || ''">
+            <h2 class="modern-post-title">
+              {{ post.title }}
+            </h2>
+            <div class="modern-post-series" font-size-sm>
+              <div v-if="post.excerpt" class="modern-post-excerpt" v-html="post.excerpt" />
+            </div>
+          </RouterLink>
+        </div>
+      </template>
     </div>
   </div>
 </template>
@@ -71,6 +71,10 @@ function shouldShowDate(index: number) {
   &-header {
     background: rgba(255, 255, 255, 0.8);
     backdrop-filter: blur(10px);
+
+    @at-root html.dark & {
+      background: rgba(0, 0, 0, 0.8);
+    }
   }
 
   &-title {
@@ -83,6 +87,12 @@ function shouldShowDate(index: number) {
       border-radius: 2px;
       margin-right: 0.75rem;
     }
+
+    @at-root html.dark & {
+      &::before {
+        background: #fff;
+      }
+    }
   }
 
   &-vertical-bar {
@@ -90,6 +100,12 @@ function shouldShowDate(index: number) {
     width: 5px;
     background: #000;
     border-radius: 2px;
+  }
+
+  @at-root html.dark & {
+    &-vertical-bar {
+      background: #fff;
+    }
   }
 }
 
@@ -102,6 +118,10 @@ function shouldShowDate(index: number) {
 
   &:hover {
     background-color: #f9f9f9;
+
+    @at-root html.dark & {
+      background-color: #1a1a1a;
+    }
   }
 }
 
