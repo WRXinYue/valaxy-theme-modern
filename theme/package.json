@@ -1,0 +1,40 @@
+{
+  "name": "valaxy-theme-modern",
+  "type": "module",
+  "version": "0.0.1",
+  "packageManager": "pnpm@10.4.1",
+  "author": {
+    "name": "Denissssse",
+    "email": "Shomnipotence@gmail.com",
+    "url": "https://shompinice.github.io"
+  },
+  "contributors": [
+    {
+      "name": "WRXinYue",
+      "email": "wrxinyue@proton.me",
+      "url": "https://github.com/WRXinYue"
+    }
+  ],
+  "homepage": "https://shompinice.github.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/WRXinYue/valaxy-theme-modern"
+  },
+  "keywords": [
+    "valaxy",
+    "theme",
+    "modern",
+    "vue"
+  ],
+  "main": "client/index.ts",
+  "types": "types/index.d.ts",
+  "dependencies": {
+    "@iconify-json/ant-design": "^1.2.5",
+    "@iconify-json/simple-icons": "^1.2.25",
+    "date-fns": "^4.1.0",
+    "motion": "^12.6.2"
+  },
+  "devDependencies": {
+    "valaxy": "^0.22.13"
+  }
+}
