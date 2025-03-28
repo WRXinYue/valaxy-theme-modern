@@ -1,14 +1,12 @@
 <script setup lang="ts">
-import { useBreakpoints } from '@vueuse/core'
+import { breakpointsTailwind, useBreakpoints } from '@vueuse/core'
 import { computed } from 'vue'
 import { useRoute } from 'vue-router'
 
 const route = useRoute()
-const breakpoints = useBreakpoints({
-  mobile: 640,
-})
+const breakpoints = useBreakpoints(breakpointsTailwind)
 
-const isMobile = breakpoints.smaller('mobile')
+const isMobile = breakpoints.smaller('md')
 
 const isPostDetail = computed(() => {
   return route.path.startsWith('/posts/') && route.path !== '/posts'

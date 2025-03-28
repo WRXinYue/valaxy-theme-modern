@@ -13,6 +13,16 @@ export default defineConfig<ThemeConfig>({
     //   primary: 'red',
     // },
 
+    logo: {
+      dark: '/logo_dark.png',
+      light: '/logo_light.png',
+    },
+
+    hero: {
+      title: 'SHOMPINICE',
+      description: 'Elegant. Modern. Inspiring.',
+    },
+
     nav: [
       {
         text: 'Home',

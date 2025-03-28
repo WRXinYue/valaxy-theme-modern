@@ -11,46 +11,11 @@ tags:
   - test
 ---
 
-随着技术的飞速发展，人工智能（AI）正逐步渗透到医疗、金融、教育等各个领域。专家预测，到2030年，AI将为全球经济贡献超过15万亿美元，但同时可能取代部分传统工作岗位。伦理问题（如数据隐私和算法偏见）也成为焦点，呼吁全球合作制定监管框架。未来，AI与人类协作的模式或将成为主流，而非完全替代。
+这是一篇用于测试 Valaxy 主题文章格式的示例文章。文章主要展示了不同级别的标题、列表和复选框等 Markdown 元素在 Valaxy 主题下的呈现效果，帮助用户了解文章格式化的结果。
 
 <!-- more -->
 
-::: zh-CN
-
-[[toc]]
-
-标题是一级标题
-
-## 二级标题 {lang="zh-CN"}
-
-### 三级标题 {lang="zh-CN"}
-
-#### 四级标题 {lang="zh-CN"}
-
-##### 五级标题 {lang="zh-CN"}
-
-###### 六级标题 {lang="zh-CN"}
-
-## 标题 {lang="zh-CN"}
-
-## 列表测试 {lang="zh-CN"}
-
-- AAA
-- BBB
-- CCC
-  - DDD
-    - EEE
-
-### Checkbox
-
-- [ ] FLAG
-- [x] FLAG
-      :::
-
-::: en
-[[toc]]
-
-The title is a primary title
+#
 
 ## Secondary title {lang="en"}
 
@@ -76,7 +41,6 @@ The title is a primary title
 
 - [ ] FLAG
 - [x] FLAG
-      :::
 
 ![]()
 _a_

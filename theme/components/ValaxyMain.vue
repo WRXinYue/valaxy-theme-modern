@@ -10,7 +10,7 @@ const siteConfig = useSiteConfig()
 </script>
 
 <template>
-  <main w="md:41vw" px-59px>
+  <main w="md:41vw" class="modern-safe-padding">
     <div w="full">
       <slot name="main">
         <div class="content" w="full">
@@ -18,12 +18,12 @@ const siteConfig = useSiteConfig()
           <slot name="main-header-after" />
 
           <slot name="main-content">
-            <div class="max-w-none pb-8 prose">
-              <ValaxyMd :frontmatter="frontmatter">
+            <ValaxyMd :frontmatter="frontmatter">
+              <div class="max-w-none pb-8 prose">
                 <slot name="main-content-md" />
                 <slot />
-              </ValaxyMd>
-            </div>
+              </div>
+            </ValaxyMd>
             <slot name="main-content-after" />
           </slot>
         </div>

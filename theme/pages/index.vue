@@ -1,5 +1,5 @@
 <template>
-  <ModernBanner />
+  <ModernHero />
 </template>
 
 <route lang="yaml">

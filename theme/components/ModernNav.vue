@@ -47,12 +47,16 @@ function updateMarker() {
     [marker.value, {
       top: `${previousActive.value.offsetTop}px`,
       height: `${previousActive.value.offsetHeight}px`,
+    }, {
+      duration: 0.01,
     }],
     // Expand in the direction of movement
     [marker.value, {
       top: `${direction > 0 ? previousActive.value.offsetTop : currentActive.value.offsetTop}px`,
       height: `${Math.abs(currentActive.value.offsetTop - previousActive.value.offsetTop)
       + (direction > 0 ? currentActive.value.offsetHeight : previousActive.value.offsetHeight)}px`,
+    }, {
+      duration: 0.05,
     }],
     // Settle to new position
     [marker.value, {
@@ -60,10 +64,8 @@ function updateMarker() {
       height: `${currentActive.value.offsetHeight}px`,
     }, {
       type: spring,
-      bounce: 0.15,
-      stiffness: 70,
-      damping: 8,
-      duration: 0.25,
+      stiffness: 220,
+      damping: 22,
     }],
   ]
 

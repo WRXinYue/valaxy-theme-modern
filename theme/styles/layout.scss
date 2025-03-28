@@ -1,3 +1,5 @@
+@use 'valaxy/client/styles/mixins/index.scss' as *;
+
 .link {
   color: var(--st-c-brand);
 }
@@ -12,4 +14,13 @@ html {
 
 .modern-nav {
   transition: all 0.3s ease;
+}
+
+.modern-safe-padding {
+  padding-inline: max(59px, env(safe-area-inset-left));
+  transition: padding var(--va-transition-duration) ease;
+
+  @include screen('md') {
+    padding-inline: max(0, env(safe-area-inset-left));
+  }
 }

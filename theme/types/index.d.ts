@@ -1,6 +1,6 @@
 import type { DefaultTheme } from 'valaxy'
 
-export namespace StarterTheme {
+export namespace ModernTheme {
   export type Config = ThemeConfig
   export type Sidebar = any
 }
@@ -60,10 +60,26 @@ export interface ThemeConfig extends DefaultTheme.Config {
     }
   }>
 
+  logo: string | {
+    dark?: string
+    light?: string
+  }
+
   /**
    * navbar
    */
   nav: NavItem[]
+
+  hero: {
+    title?: string
+    description?: string
+    image?: string
+    /**
+     * Enable or disable the parallax effect on mouse movement
+     * @default false
+     */
+    parallax?: boolean
+  }
 }
 
 export interface NavItem {

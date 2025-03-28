@@ -15,9 +15,9 @@ export const defaultThemeConfig: ThemeConfig = {
   },
 
   footer: {
-    since: 2022,
+    since: 2025,
     icon: {
-      name: 'i-ri-cloud-line',
+      name: '',
       animated: true,
       color: 'var(--va-c-primary)',
       url: 'https://sponsors.yunyoujun.cn',
