@@ -38,11 +38,11 @@ function shouldShowDate(index: number) {
 </script>
 
 <template>
-  <div w="19.37vw" max-h-100vh overflow-y-auto>
-    <div class="modern-post-list">
+  <div w="md:19.37vw" max-h-100vh overflow-y-auto>
+    <div class="modern-post-list px-59px">
       <template v-for="(post, index) in posts" :key="post.path">
         <div v-if="shouldShowDate(index)" top="0" left="0" class="modern-post-list-header" sticky>
-          <div relative h="63px" w="15.5vw" ml-auto>
+          <div relative h="63px" w="md:15.5vw" ml-auto>
             <div absolute bottom="0" left="0">
               <div flex items-center text-xl font-bold class="modern-post-list-title">
                 {{ formatDate(post.date) }}
@@ -51,7 +51,7 @@ function shouldShowDate(index: number) {
           </div>
         </div>
 
-        <div w="15.5vw" ml-auto class="modern-post-item" mb="47px" :mt="shouldShowDate(index) ? '63px' : '0'">
+        <div w="md:15.5vw" ml-auto class="modern-post-item" mb="47px" :mt="shouldShowDate(index) ? '63px' : '0'">
           <RouterLink :to="post.path || ''">
             <h2 class="modern-post-title">
               {{ post.title }}

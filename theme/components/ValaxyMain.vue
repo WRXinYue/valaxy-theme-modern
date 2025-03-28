@@ -10,10 +10,10 @@ const siteConfig = useSiteConfig()
 </script>
 
 <template>
-  <main w="41vw" flex="~">
-    <div w="full" flex="~">
+  <main w="md:41vw" px-59px>
+    <div w="full">
       <slot name="main">
-        <div class="content" flex="~ col grow" w="full">
+        <div class="content" w="full">
           <slot name="main-header" />
           <slot name="main-header-after" />
 
@@ -36,7 +36,9 @@ const siteConfig = useSiteConfig()
 
         <slot v-if="siteConfig.comment.enable && frontmatter.comment !== false" name="comment" />
 
-        <slot name="footer" />
+        <ModernFooter>
+          <slot name="footer" />
+        </ModernFooter>
       </slot>
     </div>
 

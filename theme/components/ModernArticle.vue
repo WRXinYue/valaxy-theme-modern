@@ -37,7 +37,7 @@ const relativeTime = computed(() => {
 
 <template>
   <article mt="14vh">
-    <header class="pt-6 space-y-1 xl:pb-10">
+    <header class="px-59px pt-6 space-y-1 xl:pb-10">
       <h1
         class="st-text text-3xl font-extrabold leading-9 tracking-tight md:text-5xl sm:text-4xl md:leading-14 sm:leading-10"
       >
@@ -66,7 +66,7 @@ const relativeTime = computed(() => {
     </header>
 
     <div
-      class="pb-16 divide-y divide-gray-200 xl:pb-20 xl:divide-y-0 dark:divide-gray-700"
+      class="divide-y divide-gray-200 xl:divide-y-0 dark:divide-gray-700"
       style="grid-template-rows: auto 1fr"
     >
       <div class="xl:col-span-3 xl:row-span-2 divide-y divide-gray-200 xl:pb-0 dark:divide-gray-700">

@@ -91,7 +91,7 @@ onMounted(() => nextTick(updateMarker))
 </script>
 
 <template>
-  <div flex="~ col" w="56px" h="full" class="modern-nav fixed left-0 top-0 z-50 border-r border-gray-200 bg-white dark:border-gray-800 dark:bg-dark">
+  <div flex="~ col" w="56px" h="full" class="modern-nav fixed left-0 top-0 z-50 border-gray-200 bg-white <md:border-b md:border-r dark:border-gray-800 dark:bg-dark">
     <ModernMobileMenuTrigger @click="toggleMobileMenu" />
 
     <div flex="~ col" justify-center h="full" class="desktop-nav-items">
@@ -151,7 +151,6 @@ onMounted(() => nextTick(updateMarker))
     top: 0;
     bottom: auto;
     z-index: 50;
-    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
 
     .desktop-nav-items,
     .dark-mode-toggle {
