@@ -14,6 +14,14 @@ export const defaultThemeConfig: ThemeConfig = {
     primary: '#0078E7',
   },
 
+  logo: '',
+
+  hero: {
+    title: '',
+    description: '',
+    image: '',
+  },
+
   footer: {
     since: 2025,
     icon: {

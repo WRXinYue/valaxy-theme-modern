@@ -31,7 +31,7 @@ onMounted(() => {
     >
       <ModernLogo
         title="SHOMPINICE"
-        class="modern-about-logo modern-safe-padding"
+        class="modern-safe-padding modern-about-logo"
         :class="{ 'modern-about-loaded': isLoaded }"
       />
 

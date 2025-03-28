@@ -68,7 +68,7 @@ onMounted(() => {
 
 <template>
   <div ref="containerRef" w="md:19.37vw" max-h-100vh overflow-y-auto class="modern-scroll-container">
-    <div class="modern-post-list modern-safe-padding">
+    <div class="modern-safe-padding modern-post-list">
       <template v-for="(post, index) in posts" :key="post.path">
         <div v-if="shouldShowDate(index)" top="0" left="0" class="modern-post-list-header" sticky z-10>
           <div relative h="63px" w="md:15.5vw" ml-auto>

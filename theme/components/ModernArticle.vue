@@ -46,7 +46,7 @@ const relativeTime = computed(() => {
 
       <div v-if="siteConfig.statistics.enable" color="gray-500" pt7>
         <template v-if="fm.updated || fm.readingTime || fm.wordCount">
-          <span v-if="fm.updated" class="inline-flex-center reading-time whitespace-nowrap">
+          <span v-if="fm.updated" class="reading-time inline-flex-center whitespace-nowrap">
             {{ relativeTime }}
           </span>
 
